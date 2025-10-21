@@ -15,7 +15,7 @@ def is_sentence(text):
     return True
 
 def get_sentence():
-    """Prompt until a valid sentence is entered, then return it."""
+   
     while True:
         text = input("Enter a sentence: ").strip()
         if is_sentence(text):
@@ -23,7 +23,7 @@ def get_sentence():
         print("Invalid sentence. A sentence must start with a capital letter and end with .!?")
 
 def calculate_frequencies(sentence):
-    """Return two lists: unique words and their corresponding frequencies."""
+    
     
     sentence_body = sentence[:-1].lower()
     raw_words = sentence_body.split()
@@ -44,7 +44,7 @@ def calculate_frequencies(sentence):
     return words, freqs
 
 def print_frequencies(words, frequencies):
-    """Print words and their frequencies in a readable format."""
+   
     print("\nWord frequencies:")
     for w, f in zip(words, frequencies):
         print(f"{w}: {f}")
